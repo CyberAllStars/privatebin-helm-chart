@@ -90,9 +90,9 @@ ingress:
           pathType: Prefix
 
   tls: 
-  - secretName: privatebin-tls
-    hosts:
-      - privatebin.bzrlvl.com
+    - secretName: privatebin-tls
+      hosts:
+        - privatebin.bzrlvl.com
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
