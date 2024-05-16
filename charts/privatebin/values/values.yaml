@@ -80,8 +80,9 @@ extraVolumeMounts: []
 ingress:
   enabled: true
   annotations: {}
-    # kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
+    cert-manager.io/cluster-issuer: le-stage
   hosts:
     - host: privatebin.bzrlvl.com
       paths:
